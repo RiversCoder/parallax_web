@@ -1,0 +1,98 @@
+/* Portfolio css */
+@font-face {
+	font-family:bryant;
+	src: url(../font/Bryant-Bold.ttf);
+}
+
+body{
+	background: #2C2638;
+	overflow: hidden;
+	position: relative;
+	perspective: 800;
+}
+
+.p_bg{
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	background: url(../img/bg1.jpg) no-repeat center 0, url(../img/bg2.jpg) no-repeat center 500px;
+}
+
+.p_wrap{
+	opacity: 0;
+	transition: 2s;
+	max-width: 1000px;
+	height: 400px;
+	padding:10% 0;
+	margin:0 auto;
+	position: relative;
+	transform-style: preserve-3d;
+	transform-origin:center center -500;
+	transition: all 1s;
+	perspective: 800;
+}
+
+.p_item{
+	width: 80%;
+	transform-origin:center center 0;
+	box-shadow: 0 0 100px 10px rgba(255,255,255,.2);
+	transition: all 2s;
+	height: 400px;
+	position: absolute;
+	left: 10%;	
+}
+
+
+.p_item a{
+	position: absolute;
+	overflow: hidden;
+	left: 10px;
+	top: -10px;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+
+
+.p_item_hand{
+	width: 100%;
+	height: 100%;
+	transform-origin: center center;
+	background: url(../img/hand.jpg) no-repeat center center;
+	background-size:100% 100%;
+}
+
+.p_item_mask{
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: -webkit-linear-gradient(top, rgba(45,39,57,0.05),rgba(45,39,57,.95));
+}
+.p_item_text{
+	position: absolute;
+	left: 50px;
+	bottom: 30px;
+}
+.p_item_text p:nth-of-type(1){
+	color: #f0f0f0;
+	font-family: "bryant";
+	font-size: 20px;
+	line-height: 50px;
+	letter-spacing: 4px;
+	transition: .5s;
+	transform: translateY(200px);
+}
+.p_item_text p:nth-of-type(2){
+	color: rgb(221,50,84);
+	font-size: 14px;
+	letter-spacing: 2px;
+	transition: .5s;
+	transition-delay: .2s;
+	transform: translateY(200px);
+}

@@ -1,0 +1,33 @@
+/* css repeat */
+
+body,ul,li,h1,h2,h3,h4,p,input{
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+body{
+	font-size: 12px;
+	overflow: hidden;
+	font-family: "微软雅黑";
+}
+
+ul,li{
+	list-style: none;
+}
+img{
+	border: none;
+	vertical-align: top;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.clear:after{
+	content: "";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}

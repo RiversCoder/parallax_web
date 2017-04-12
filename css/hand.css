@@ -1,0 +1,160 @@
+/* hand */
+@font-face {
+	font-family:bryant;
+	src: url(../font/Bryant-Bold.ttf);
+}
+html{
+	position: relative;
+	top: 0;
+	background: rgb(44,38,56);
+}
+body{
+	overflow: auto;
+	position: relative;
+}
+#bg{
+	width: 100%;
+	position: fixed;
+	transition: .5s;
+	transform-origin: 600px 400px;
+	transform: scale(.8);
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: url(../img/hand.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.H_warp{
+	position: relative;
+	z-index: 2;
+}
+.warp{
+	padding: 0 20px;
+	background: rgb(44,38,56);
+}
+.warp img{
+	width: 100%;
+}
+
+.H_section1{
+	text-align: center;
+	padding-top:200px;
+	height: 433px;
+	vertical-align: middle;
+	background: -webkit-linear-gradient(top,rgba(44,38,56,.1) 0%,rgba(44,38,56,.8) 80%,rgba(44,38,56,1) 100%);
+}
+.H_section1 h1{
+	opacity: 0;
+	transition: all 3s;
+	font-family:'bryant';
+	font-size: 60px;
+	line-height: 100px;
+	color: rgb(44,38,56);
+	letter-spacing: 10px;
+}
+.H_section1 p{
+	opacity: 0;
+	transition: all 3s;
+	transition-delay: 1s;
+	font-family: 'bryant';
+	transition-delay: 1s;
+	font-size: 24px;
+	color: #f2f2f2;
+	letter-spacing: 10px;
+}
+
+.flag{
+	width: 6px;
+	height: 82px;
+	margin: 50px auto;
+	background: url(../hand/arrow_downfw_1431452090.png) no-repeat;
+}
+.H_section2{
+	font-family: 'bryant';
+	padding: 50px 200px;
+	background: rgb(44,38,56);
+}
+.section2_L{
+	width: 40%;
+	float: left;
+	margin-right: 100px;
+}
+.H_section2 h3{
+	font-size: 20px;
+	letter-spacing: 5px;
+	line-height: 80px;
+	color: #f2f2f2;
+}
+.H_section2 p{
+	font-family: "agency fb";
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height:30px;
+	color: #B2B0B6;
+}
+.section2_R{
+	float: left;
+}
+.section2_R p{
+	padding-left: 17px;
+	background: url(../hand/bullet.png) no-repeat left center;
+}
+.H_section4{
+}
+.H_section4>div,.H_section8>div,.H_section7>div{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #413946;
+}
+.H_section8>div{
+	background: #f1f2f8;
+}
+.H_section4>div>img,.H_section8>div>img,.H_section7>div>img{
+	transform: translateY(60px);
+	transition: all 2s;
+}
+.link{
+	display: block;
+	position: relative;
+}
+.linkNext{
+	width: 100%;
+	height: 400px;
+	background: url(../hand/covin.jpg) no-repeat center;
+	background-size: 100% 180%;
+	opacity: .5;
+}
+.linkText{
+	position: absolute;
+	width: 900px;
+	height: 100px;
+	left: 50%;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -450px;
+	text-align: center;
+}
+.linkText span{
+	font-size: 24px;
+	font-family: "courier";
+	letter-spacing: 4px;
+	font-style: italic;
+	color: #fff;
+}
+.linkText p{
+	font-size: 30px;
+	line-height: 70px;
+	letter-spacing: 10px;
+	color: #fff;
+	font-family: 'bryant';
+}
+.link .flag{
+	position: absolute;
+	left: 50%;
+	top: -90px;
+}
+.link:hover p{
+	text-decoration: underline;
+}
